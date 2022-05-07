@@ -1,18 +1,6 @@
-.container {
-  width: min(100% - 2.5rem, 90rem);
-  margin-inline: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.flex-col {
-  flex-direction: column !important;
-}
-
-.ml-2 {
-  margin-left: 1rem;
-}
