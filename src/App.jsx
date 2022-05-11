@@ -8,8 +8,8 @@ const queryClient = new QueryClient()
 function App() {
   return (
     <>
-      <div className="grid h-full place-items-center container mt-20 grid-rows-5 gap-5">
-        <h1 className="font-bold text-4xl">Shorty</h1>
+      <div className="grid h-screen place-items-center grid-rows-3 gap-5 bg-hero-pattern bg-scroll">
+        <h1 className="font-bold lg:text-6xl text-4xl">Shorty</h1>
         <QueryClientProvider client={queryClient}>
           <Form />
         </QueryClientProvider>
