@@ -15,10 +15,11 @@ const useLink = link => {
     {
       refetchOnWindowFocus: false,
       enabled: false,
-      refetchOnMount: false,
+      // refetchOnMount: false,
     },
   )
-  console.log(data)
+  
+  // console.log(data)
   return {data, isLoading, isRefetching, isError, refetch}
 }
 
