@@ -11,7 +11,11 @@ module.exports = {
     fontFamily: {
       sans : ['Poppins','sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('src/assets/hip-square.png')",
+      }
+    },
   },
   plugins: [],
 }
