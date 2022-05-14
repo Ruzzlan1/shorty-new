@@ -1,9 +1,20 @@
 import React from 'react'
 import './App.css'
-import {QueryClientProvider, QueryClient} from 'react-query'
+import {QueryClientProvider, QueryClient, QueryCache} from 'react-query'
 import Form from './components/Form'
 import Footer from './components/Footer'
-const queryClient = new QueryClient()
+import toast from 'react-hot-toast'
+
+const queryClient = new QueryClient({
+  queryCache: new QueryCache({
+    onError: (error,query) => {
+      if(query.state.data !== undefined) {
+        toast.error(`Something went wrong: (${error.message})`)
+      }
+    }
+  })
+})
+
 
 function App() {
   return (
