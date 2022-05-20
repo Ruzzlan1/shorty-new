@@ -1,5 +1,6 @@
 module.exports = {
   mode: 'jit',
+  darkMode: 'class',
   content: [
     './index.html',
     './src/**/*.{vue,jsx,ts,js}',
@@ -14,6 +15,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('src/assets/hip-square.png')",
+        'dark-hero-pattern' : "url('src/assets/861241.jpg')"
       }
     },
   },

@@ -54,7 +54,7 @@ const Form = () => {
       <form className="py-4" onSubmit={getUrl}>
         <fieldset className="md:flex md:gap-4 items-center">
           <Input fullLink={url.fullLink} handleChange={onChange} />
-          <button className="flex items-center justify-center m-auto p-2 md:px-5 font-bold transition bg-gray-200 border-4 border-black rounded-xl focus:outline-none focus:ring shadow-[6px_6px_0_0_#000] hover:shadow-none active:bg-pink-50 mt-5 md:m-0">
+          <button className="flex items-center justify-center m-auto p-2 md:px-5 font-bold transition bg-gray-200  border-4 border-black  rounded-xl focus:outline-none focus:ring shadow-[6px_6px_0_0_#000] dark:shadow-[6px_6px_0_0_#999] hover:shadow-none dark:hover:shadow-none  active:bg-pink-50 mt-5 md:m-0">
             Give me that god damn short link
           </button>
           <Toaster />

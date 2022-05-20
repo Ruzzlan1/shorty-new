@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import './App.css'
 import {QueryClientProvider, QueryClient, QueryCache} from 'react-query'
 import Form from './components/Form'
@@ -17,14 +17,15 @@ const queryClient = new QueryClient({
 
 
 function App() {
+  const [isDark,setDark] = useState(false)
   return (
     <>
-      <div className="grid h-screen place-items-center grid-rows-3 gap-5 bg-hero-pattern bg-scroll">
-        <h1 className="font-bold lg:text-6xl text-4xl">Shorty</h1>
+      <div className={`grid h-screen place-items-center grid-rows-3 gap-5 ${!isDark ? 'bg-hero-pattern' : 'bg-dark-hero-pattern'} bg-scroll ${isDark ? 'dark' : ''} `}>
+        <h1 className="font-bold lg:text-6xl text-4xl dark:text-white">Shorty</h1>
         <QueryClientProvider client={queryClient}>
           <Form />
         </QueryClientProvider>
-        <Footer />
+        <Footer setDark={setDark}/>
       </div>
     </>
   )

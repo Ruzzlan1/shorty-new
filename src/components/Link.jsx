@@ -18,7 +18,7 @@ const Link = ({shortLink, originalLink}) => {
   const [copied, update] = useTemp()
   return (
     <>
-      <div className="bg-slate-300 p-4 rounded-xl flex flex-col lg:flex-row items-center justify-between border-gray-300 focus:outline-none focus:ring shadow-[6px_6px_0_0_#666] hover:shadow-none active:bg-pink-50 transition">
+      <div className="bg-slate-300 dark:bg-slate-50 p-4 rounded-xl flex flex-col lg:flex-row items-center justify-between border-gray-300 focus:outline-none focus:ring shadow-[6px_6px_0_0_#666] hover:shadow-none active:bg-pink-50 transition">
         <p className="font-sans text-sm font-normal leading-relaxed text-gray-600 font-base whitespace-nowrap overflow-x-hidden text-ellipsis max-w-[30ch]">
           {originalLink}
         </p>
