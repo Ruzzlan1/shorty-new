@@ -17,7 +17,7 @@ const Footer = ({setDark}) => {
       </p>
       <p className="mt-5">
         Check out the source on{' '}
-        <a href="#" className="underline">
+        <a href="https://github.com/Ruzzlan1/shorty-new" className="underline">
           Github!
         </a>
       </p>
