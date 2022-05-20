@@ -14,8 +14,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('src/assets/hip-square.png')",
-        'dark-hero-pattern' : "url('src/assets/861241.jpg')"
+        'hero-pattern': "url('/hip-square.png')",
+        'dark-hero-pattern' : "url('/861241.jpg')"
       }
     },
   },
